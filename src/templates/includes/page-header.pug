@@ -1,2 +1,33 @@
 header.page-header
-  .container
+  .page-header__row
+    .container
+        
+  .page-header__row
+    .container
+      .user-block
+        a(href="").user-block__link.user-block__link--active Login
+        a(href="").user-block__link Register
+      a(href="").logo
+        h1.logo__title Dreamy
+        h2.logo__subtitle Online Store      
+      .search
+        form(action="/" method="GET").search__form
+          .search__wrap
+            input(type="text" placeholder="Search").search__inut
+            input(type="submit").search_submit
+
+-var headerMenuItems = ['Home', 'New Arrivals', 'Woman', 'Kids', 'Shoes', 'Accessories']
+
+  .page-header__bottom
+    .container
+      nav.page-header__nav
+        a.page-header__nav-toggler(href="javascript:void(0)") Menu
+          span.page-header__nav-burger
+        ul.page-header__nav-list
+          for menu in headerMenuItems
+            if menu == 'Home'
+              li.page-header__nav-item.page-header__nav-item--active
+                a(href="/") #{menu}
+            else
+              li.page-header__nav-item
+                a(href="/") #{menu}

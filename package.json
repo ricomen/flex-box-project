@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "start": "gulp",
-    "build": "cross-env NODE_ENV=production gulp build"    
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "author": "Timur Khamitov",
   "license": "MIT",
@@ -17,8 +17,8 @@
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.18.13",    
-    "cross-env": "^5.0.3",
+    "browser-sync": "^2.18.13",
+    "cross-env": "^5.0.5",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -46,6 +46,6 @@
     "normalize.css": "^7.0.0",
     "run-sequence": "^2.1.0",
     "smart-grid": "^1.1.0",
-    "webpack": "^3.4.1"
+    "webpack": "^3.5.2"
   }
 }

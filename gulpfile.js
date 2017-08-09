@@ -172,7 +172,7 @@ gulp.task('css-libs', () => {
 /*
   Watch
  */
-gulp.task('watch', ['bs', 'less', 'pug', 'webpack:watch'], () => {
+gulp.task('watch', ['clear', 'bs', 'less', 'pug', 'webpack:watch'], () => {
   gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('src/templates/**/*.pug', ['pug']);  
   gulp.watch('build/*.html', browserSync.reload);
