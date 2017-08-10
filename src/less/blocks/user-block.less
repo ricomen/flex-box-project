@@ -1,6 +1,7 @@
 .user-block {
   max-width: 77px;
-  &__link {
+
+  &__link {    
     padding: 8px;
     font-size: 12px;
     line-height: 1.1;
@@ -9,8 +10,12 @@
     color: inherit;
     text-transform: uppercase;
     box-sizing: border-box;
+    transition: 0.15s ease-in-out;
+    &:hover {
+      background: rgba(0, 0, 0, 0.2)
+    }
     &--active {
       border: 1px solid #e5e4e2;
     }
-  }
+  }//link
 }

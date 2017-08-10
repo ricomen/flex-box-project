@@ -2,6 +2,9 @@
   position: relative;
   height: 440px;
   background: #e1e1e3;
+  @media @phone {
+    display: none;
+  }
 
   &__controls {
     background: red;
@@ -14,6 +17,7 @@
   }//controls
 
   &__btn {
+    cursor: pointer;
     position: absolute;
     height: 115px;
     width: 30px;
@@ -22,6 +26,9 @@
     outline: none;
     opacity: 0.9;
     transition: 0.15s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
     &::after {
       position: absolute;
       content: '';
