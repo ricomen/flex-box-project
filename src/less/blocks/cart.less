@@ -4,5 +4,23 @@
   align-items: center;
   font-size: 12px;
   line-height: 1.1;  
+  margin-bottom: 8px;
+  @media @phone {
+    margin-bottom: 30px;     
+  }
+
+  &__info {
+    position: relative;
+    padding-left: 33px;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      margin-top: -7.5px;
+      .square(15px);
+      background: red;
+    }
+  }
 
 }

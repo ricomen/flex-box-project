@@ -17,21 +17,18 @@ header.page-header
         h1.logo__title Dreamy
         h2.logo__subtitle Online Store  
 
-      .search
-        form(action="/" method="GET").search__form
-          .search__wrap
-            input(type="text" placeholder="Search").search__inut
-            input(type="submit").search_submit
-      .page-header__action
+      .page-header__item
         .cart
           div.cart__info My Cart(0):
             span.cart__total $0
           a.btn.btn--blue.cart__btn Checkout
 
         .search
-          form.search__form(action="/search.php" method="GET" name="header-search")
-            input(type="text").search__input
-            search
+          form(action="/" method="GET").search__form
+            .search__wrap
+              input(type="text" placeholder="Search").search__inut
+              input(type="submit").search_submit
+
 
 -var headerMenuItems = ['Home', 'New Arrivals', 'Woman', 'Kids', 'Shoes', 'Accessories']
 
