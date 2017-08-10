@@ -1,3 +1,63 @@
 .slider {
-  
+  position: relative;
+  height: 440px;
+  background: #e1e1e3;
+
+  &__controls {
+    background: red;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    margin-top: -55.25px;
+  }//controls
+
+  &__btn {
+    position: absolute;
+    height: 115px;
+    width: 30px;
+    background: #fff;
+    border: none;
+    outline: none;
+    opacity: 0.9;
+    transition: 0.15s ease-in-out;
+    &::after {
+      position: absolute;
+      content: '';
+      margin-left: -6px;
+      margin-top: -8px;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 18px;
+      background: red;
+    }
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;      
+    }
+  }//btn
+
+  &__dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;    
+    &-item {
+      margin-right: 20px;
+      .square(10px);
+      border-radius: 50%;
+      background: #000;
+      &:last-child {
+        margin-right: 0;
+      }
+      &--active {
+        background: #fff;
+      }      
+    }
+  }
 }
