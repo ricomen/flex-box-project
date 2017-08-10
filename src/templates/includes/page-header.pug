@@ -1,6 +1,12 @@
 header.page-header
-  .page-header__row
+  .page-header__top
     .container
+      .page-header__item.page-header__item--shipping
+        a.page-header__top-link(href="/") Free Shipping
+        a.page-header__top-link(href="/") 100 % Original Products
+
+      .page-header__item
+        a.page-header__top-link(href="tel:+02078483510") Call Us: 020 7848 3510
         
   .page-header__bar
     .container
@@ -18,6 +24,9 @@ header.page-header
             input(type="submit").search_submit
       .page-header__action
         .cart
+          div.cart__info My Cart(0):
+            span.cart__total $0
+          a.btn.btn--blue.cart__btn Checkout
 
         .search
           form.search__form(action="/search.php" method="GET" name="header-search")
@@ -26,9 +35,8 @@ header.page-header
 
 -var headerMenuItems = ['Home', 'New Arrivals', 'Woman', 'Kids', 'Shoes', 'Accessories']
 
-  .page-header__bar
-    .container
-      nav.page-header__nav
+    nav.page-header__nav
+      .container
         a.page-header__nav-toggler(href="javascript:void(0)") Menu
           span.page-header__nav-burger
         ul.page-header__nav-list

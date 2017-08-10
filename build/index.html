@@ -12,8 +12,11 @@
   </head>
   <body>   
     <header class="page-header">
-      <div class="page-header__row">
-        <div class="container"></div>
+      <div class="page-header__top">
+        <div class="container">
+          <div class="page-header__item page-header__item--shipping"><a class="page-header__top-link" href="/">Free Shipping</a><a class="page-header__top-link" href="/">100 % Original Products</a></div>
+          <div class="page-header__item"><a class="page-header__top-link" href="tel:+02078483510">Call Us: 020 7848 3510</a></div>
+        </div>
       </div>
       <div class="page-header__bar">
         <div class="container">
@@ -29,7 +32,9 @@
             </form>
           </div>
           <div class="page-header__action">
-            <div class="cart"></div>
+            <div class="cart">
+              <div class="cart__info">My Cart(0):<span class="cart__total">$0</span></div><a class="btn btn--blue cart__btn">Checkout</a>
+            </div>
             <div class="search">
               <form class="search__form" action="/search.php" method="GET" name="header-search">
                 <input class="search__input" type="text">
@@ -40,20 +45,18 @@
         </div>
       </div>
     </header>
-    <div class="page-header__bar">
-      <div class="container">
-        <nav class="page-header__nav"><a class="page-header__nav-toggler" href="javascript:void(0)">Menu<span class="page-header__nav-burger"></span></a>
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-item page-header__nav-item--active"><a href="/">Home</a></li>
-            <li class="page-header__nav-item"><a href="/">New Arrivals</a></li>
-            <li class="page-header__nav-item"><a href="/">Woman</a></li>
-            <li class="page-header__nav-item"><a href="/">Kids</a></li>
-            <li class="page-header__nav-item"><a href="/">Shoes</a></li>
-            <li class="page-header__nav-item"><a href="/">Accessories</a></li>
-          </ul>
-        </nav>
+    <nav class="page-header__nav">
+      <div class="container"><a class="page-header__nav-toggler" href="javascript:void(0)">Menu<span class="page-header__nav-burger"></span></a>
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item page-header__nav-item--active"><a href="/">Home</a></li>
+          <li class="page-header__nav-item"><a href="/">New Arrivals</a></li>
+          <li class="page-header__nav-item"><a href="/">Woman</a></li>
+          <li class="page-header__nav-item"><a href="/">Kids</a></li>
+          <li class="page-header__nav-item"><a href="/">Shoes</a></li>
+          <li class="page-header__nav-item"><a href="/">Accessories</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <div class="page-main"></div>
     <footer class="page-footer">
       <div class="container"></div>
