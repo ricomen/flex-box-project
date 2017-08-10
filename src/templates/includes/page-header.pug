@@ -10,14 +10,16 @@ header.page-header
         
   .page-header__bar
     .container
-      .user-block
-        a(href="").user-block__link.user-block__link--active Login
-        a(href="").user-block__link Register
-      a.logo(href="/")
-        h1.logo__title Dreamy
-        h2.logo__subtitle Online Store  
+      .page-header__bar-item
+        .user-block
+          a(href="").user-block__link.user-block__link--active Login
+          a(href="").user-block__link Register
+      .page-header__bar-item
+        a.logo(href="/")
+          h1.logo__title Dreamy
+          h2.logo__subtitle Online Store  
 
-      .page-header__item
+      .page-header__bar-item
         .cart
           div.cart__info My Cart(0):
             span.cart__total $0
@@ -26,8 +28,8 @@ header.page-header
         .search
           form(action="/" method="GET").search__form
             .search__wrap
-              input(type="text" placeholder="Search").search__inut
-              input(type="submit").search_submit
+              input(type="text" placeholder="Search").search__input
+              input(type="submit").search__submit
 
 
 -var headerMenuItems = ['Home', 'New Arrivals', 'Woman', 'Kids', 'Shoes', 'Accessories']
