@@ -2,8 +2,7 @@
   &__top {
     background-color: #000;
     .container {
-      display: flex;
-      justify-content: space-between;
+      display: flex;      
       align-items: center;
     }
 
@@ -16,9 +15,12 @@
       padding: 9px 9px 9px 30px;
       color: #fff;
       text-transform: uppercase;
+      &--callback {
+        margin-left: auto;
+      }
       &:last-child {
         margin-right: 0;
-      }
+      }      
       &::before {
         position: absolute;
         content: '';
@@ -30,13 +32,6 @@
       }
     }
   }//top
-
-  &__item {
-    &--shipping {
-      display: flex;
-      justify-content: space-between;
-    }
-  }//item
 
   &__bar {
     .container {
