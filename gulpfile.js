@@ -177,7 +177,7 @@ gulp.task('watch', ['dev'], () => {
   gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('src/templates/**/*.pug', ['pug']);
   gulp.watch('src/png-sprite-icons/*.png', ['png:sprite']);
-  gulp.watch('src/img/*.{png, jpg, jpeg, svg}', ['img']);
+  gulp.watch('src/img/*.*', ['img']);
   gulp.watch('src/svg-sprite-icons/*.svg', ['svg:sprite']);
   gulp.watch('build/*.html', browserSync.reload);
   gulp.watch('build/img/**/*.*', browserSync.reload);

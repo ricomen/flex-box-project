@@ -1,0 +1,135 @@
+.masonry {
+  margin-top: 50px;
+  margin-bottom: 45px;
+
+  &__layout {
+    .clearfix;
+    margin-left: -0.43%;
+    margin-right: -0.43%;
+  }//layout
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.43%;
+    margin-right: 0.43%;
+    margin-bottom: 0.86%;
+    padding: 15px;
+    float: left;
+    width: 24.1228%;
+    height: 310px;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f9f9f9;
+    text-align: center;
+    transition: 0.35s ease-in-out;
+    box-sizing: border-box;
+    @media @phone {
+      width: 49.12%;
+      height: auto;
+      min-height: 60vh;
+      background-position: center top;
+    }
+    @media @small {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &-title {     
+      display: inline-block; 
+      position: relative;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 30px;
+      line-height: 1.1;
+      font-weight: 500;
+      text-transform: uppercase;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 0;
+        background: #fff;
+      }
+      &::after {
+        top: auto;
+        bottom: 0;
+      }
+    }
+    &-subtitle {
+      font-size: 11px;
+      line-height: 25px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    &-top {
+      margin-bottom: auto;
+    }
+    &-bottom {
+      margin-top: auto;
+    }
+    &--wide {      
+      float: left;
+      width: 65.7%;
+      height: 310px;
+      @media @tablet {
+        width: 74.12%;
+      }
+    }
+    &--high {
+      height: 397px;
+
+    }
+    &--oneThird {
+      float: right;
+      width: 32.45%;      
+      @media @tablet {
+        width: 24.1%;
+      }
+    }
+
+    &--oneFourth {
+      width: 25%;
+    }
+
+    &--center {
+      float: right;
+      width: 15.8%;
+      height: 80px;
+      @media @tablet {        
+        width: 24.1228%;
+      }
+      @media @phone {
+        
+      }
+    }
+  }//item
+
+  &__btn {    
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin-top: auto;
+    width: auto;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    &--underline {
+      border: none;
+      text-decoration: underline;
+    }
+  }
+
+  &__item--center &__btn {
+    margin-top: 0;
+  }
+
+}
